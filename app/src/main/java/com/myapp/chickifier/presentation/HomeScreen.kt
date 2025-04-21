@@ -119,6 +119,7 @@ fun HomeScreen(modifier: Modifier) {
                         clipboard.setPrimaryClip(clip)
                     }
                     Toast.makeText(context, "$text : Copied!", Toast.LENGTH_SHORT).show()
+                    text = ""
                 },
                 colors = ButtonDefaults.buttonColors(
                     containerColor = orange
